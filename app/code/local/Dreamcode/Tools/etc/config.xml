@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Dreamcode_Tools>
+            <version>0.1.0</version>
+        </Dreamcode_Tools>
+    </modules>
+    <frontend>
+        <events>
+            <sales_quote_address_collect_totals_before>
+                <observers>
+                    <dc_pre_collect_before>
+                            <class>dreamcode_tools/observer</class>
+                            <method>preCollectBefore</method>
+                    </dc_pre_collect_before>
+                </observers>
+            </sales_quote_address_collect_totals_before>
+        </events>
+    </frontend>
+
+    <global>
+        <models>
+            <dreamcode_tools>
+                <class>Dreamcode_Tools_Model</class>
+            </dreamcode_tools>
+        </models>
+        <helpers>
+            <dreamcodetools>
+                <class>Dreamcode_Tools_Helper</class>
+            </dreamcodetools>
+        </helpers>
+    </global>
+
+</config>
